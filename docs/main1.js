@@ -251,7 +251,7 @@ class GameScene extends Phaser.Scene {
         this.mapBounds = { width: map.widthInPixels, height: map.heightInPixels };
       
         this.dialogueText = this.add.text(0, 0, '', {
-          fontSize: '16px', fill: '#ffffff',
+          fontSize: '20px Arial', fill: '#ffffff',
           backgroundColor: 'rgba(0, 0, 0, 0.5)',
           padding: { x: 8, y: 4 },
           wordWrap: { width: 200 }
@@ -399,13 +399,13 @@ class GameScene extends Phaser.Scene {
       
           if (this.minigameWins?.clone1) {
             winLabel = this.add.text(centerX, centerY - 150, 'Aku pernah bersamamu dan lautan bukan satu-satunya tempat bermain kita.', {
-              fontSize: '16px',
+              fontSize: '20px Arial',
               fill: '#00ffcc'
             }).setOrigin(0.5);
           }
       
           instructionText = this.add.text(centerX, centerY, 'Tebak Warna Rahasia\nTekan [S] untuk mulai', {
-            fontSize: '20px',
+            fontSize: '20px Arial',
             fill: '#fff',
             align: 'center',
             wordWrap: { width: this.mapBounds.width - 40 }
@@ -421,13 +421,13 @@ class GameScene extends Phaser.Scene {
           winLabel?.destroy();
       
           colorText = this.add.text(centerX, centerY - 40, 'Tebak warna:\nGunakan ← → lalu Enter', {
-            fontSize: '18px',
+            fontSize: '20px Arial',
             fill: '#fff',
             align: 'center'
           }).setOrigin(0.5);
       
           currentChoiceText = this.add.text(centerX, centerY + 20, `Pilihan: ${colors[choiceIndex]}`, {
-            fontSize: '24px',
+            fontSize: '20px Arial',
             fill: '#ff0',
             align: 'center'
           }).setOrigin(0.5);
@@ -447,7 +447,7 @@ class GameScene extends Phaser.Scene {
           currentChoiceText.destroy();
       
           retryText = this.add.text(centerX, centerY + 60, 'Main Lagi? [Y] Ya / [T] Tidak', {
-            fontSize: '18px',
+            fontSize: '20px Arial',
             fill: '#ffffff',
             align: 'center'
           }).setOrigin(0.5);
@@ -544,14 +544,14 @@ class GameScene extends Phaser.Scene {
       
           if (this.minigameWins?.clone2) {
             winLabel = this.add.text(centerX, centerY - 150, 'Suaraku memang mirip, tapi aku lebih suka tertawa seperti kucing nakal', {
-              fontSize: '16px',
+              fontSize: '20px Arial',
               fill: '#00ffcc'
             }).setOrigin(0.5);
           }
       
           instructionText = this.add.text(centerX, centerY,
             'Uji Reaksi Refleks!\nTekan [S] untuk mulai\nTekan [A] saat sinyal muncul untuk bereaksi', {
-              fontSize: '20px',
+              fontSize: '20px Arial',
               fill: '#fff',
               align: 'center',
               wordWrap: { width: this.mapBounds.width - 40 }
@@ -578,7 +578,7 @@ class GameScene extends Phaser.Scene {
       
           if (!gameText) {
             gameText = this.add.text(centerX, centerY, '', {
-              fontSize: '18px',
+              fontSize: '20px Arial',
               fill: '#fff',
               align: 'center'
             }).setOrigin(0.5);
@@ -637,7 +637,7 @@ class GameScene extends Phaser.Scene {
         const showRetryPrompt = () => {
           retryText?.destroy();
           retryText = this.add.text(centerX, centerY + 60, 'Main Lagi? [Y] Ya / [T] Tidak', {
-            fontSize: '18px',
+            fontSize: '20px Arial',
             fill: '#ffffff',
             align: 'center'
           }).setOrigin(0.5);
@@ -732,7 +732,7 @@ class GameScene extends Phaser.Scene {
       
           if (this.minigameWins?.clone3) {
             winLabel = this.add.text(centerX, centerY - 170, 'Kita memang berbeda, namun kita berjuang bersama.', {
-              fontSize: '16px',
+              fontSize: '20px Arial',
               fill: '#00ffcc'
             }).setOrigin(0.5);
           }
@@ -741,7 +741,7 @@ class GameScene extends Phaser.Scene {
       
           instructionText = this.add.text(centerX, centerY - 60,
             `Pilih tanganmu!\nGunakan ← → lalu tekan [Enter]\n\n${rules}`, {
-              fontSize: '18px',
+              fontSize: '20px Arial',
               fill: '#ffffff',
               align: 'center',
               wordWrap: { width: 500 }
@@ -884,7 +884,7 @@ class GameScene extends Phaser.Scene {
       
           if (this.minigameWins?.clone4) {
             winLabel = this.add.text(centerX, centerY - 130, 'Aku punya senjata unik... biasanya aku pegang trident, tapi clone ini menyembunyikan yang aslinya.', {
-              fontSize: '16px',
+              fontSize: '20px Arial',
               fill: '#00ffcc'
             }).setOrigin(0.5);
           }
@@ -1050,7 +1050,7 @@ class GameScene extends Phaser.Scene {
     
             if (this.minigameWins?.clone5) {
                 winLabel = this.add.text(centerX, centerY + 150, 'Kami sering disebut keluarga... walau tak sedarah, tapi serasa saudara.', {
-                    fontSize: '16px',
+                    fontSize: '20px Arial',
                     fill: '#00ffcc'
                 }).setOrigin(0.5);
             }
@@ -1114,7 +1114,7 @@ class GameScene extends Phaser.Scene {
             winLabel = null;
     
             gameText = this.add.text(centerX, centerY, 'Target bergerak... Tekan [SPACE] untuk menembak!', {
-                fontSize: '18px',
+                fontSize: '20px Arial',
                 fill: '#fff',
                 align: 'center'
             }).setOrigin(0.5);
@@ -1264,14 +1264,14 @@ class GameScene extends Phaser.Scene {
     
             const finishLine = this.add.rectangle(finishLineX, centerY - 75, 4, 100, 0xffffff);
             const finishLabel = this.add.text(finishLineX + 10, centerY - 130, 'FINISH', {
-                fontSize: '16px',
+                fontSize: '20px Arial',
                 fill: '#ffff00',
                 fontStyle: 'bold'
             }).setOrigin(0.5);
     
             const player = this.add.rectangle(300, centerY - 100, 30, 30, 0x00ff00);
             const ai = this.add.rectangle(300, centerY - 50, 30, 30, 0xff0000);
-            const infoText = this.add.text(centerX/2.3, centerY - 180, '', { fontSize: '18px', fill: '#fff' });
+            const infoText = this.add.text(centerX/2.3, centerY - 180, '', { fontSize: '20px Arial', fill: '#fff' });
     
             const targetWord = 'go';
             let currentInputIndex = 0;
@@ -1380,7 +1380,7 @@ class GameScene extends Phaser.Scene {
         function showInstruction() {
           if (scene.minigameWins.clone7) {
             winLabel = scene.add.text(centerX, centerY + 50, 'Di balik wajah yang mirip ini... tersembunyi tawa yang sudah kamu kenal sejak lama.', {
-              fontSize: '16px',
+              fontSize: '20px Arial',
               fill: '#00ffcc'
             }).setOrigin(0.5);
           }
@@ -1467,7 +1467,7 @@ class GameScene extends Phaser.Scene {
           scene.input.keyboard.on('keydown', inputHandler);
       
           const timerText = scene.add.text(centerX, centerY - 120, 'Waktu: 30', {
-            fontSize: '18px',
+            fontSize: '20px Arial',
             fill: '#ffcc00'
           }).setOrigin(0.5);
       
@@ -1569,7 +1569,7 @@ class GameScene extends Phaser.Scene {
       
           if (scene.minigameWins.clone8) {
             winLabel = scene.add.text(centerX, centerY - 220, 'Semuanya adalah tipuan', {
-              fontSize: '16px',
+              fontSize: '20px Arial',
               fill: '#00ffcc'
             }).setOrigin(0.5);
           }
@@ -1776,7 +1776,7 @@ class GameScene extends Phaser.Scene {
           const centerY = this.mapBounds.height / 2;
           const bg = this.add.rectangle(centerX, centerY, 450, 150, 0x000000, 0.2);
           this.add.text(centerX,centerY,  'Horee!!!\nSemua minigame udah kamu menangin!\nAmbil hadiahnya di Goa yang ada di dalam hutan.\nKiri text ini', {
-            fontSize: '16px',
+            fontSize: '20px Arial',
             fill: '#00ff00',
             align: 'center'
           }).setOrigin(0.5);
