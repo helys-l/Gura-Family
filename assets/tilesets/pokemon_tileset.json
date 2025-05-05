@@ -1,0 +1,15 @@
+{
+    "tileset": {
+      "name": "pokemon_tileset",
+      "tilewidth": 32,
+      "tileheight": 32,
+      "tilecount": 1024,
+      "columns": 32,
+      "image": {
+        "source": "map.jpg",
+        "width": 1024,
+        "height": 1024
+      }
+    }
+  }
+  
